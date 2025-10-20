@@ -37,7 +37,7 @@ window.addEventListener("load", () => {
   // 🔹 Barcha tugmalarga event biriktiramiz
   buttons.forEach(btn => {
     btn.addEventListener("click", () => {
-      alert("Backend hali tayyor emas");
+      alert("Backend - is not ready yet. Backend hali tayyor emas");
     });
   });
 
