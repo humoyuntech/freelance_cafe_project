@@ -1,0 +1,94 @@
+.navbar {
+  width: 100%;
+  background-color: var( --bg-body);
+  border-bottom: 1px solid #252525;
+  border-top: 1px solid #252525;
+  height: 84px;
+  overflow: none;
+}
+
+.navbar__wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  width: 77%;
+  height: 100%;
+  position: relative;
+}
+
+
+.nav__item {
+  height: 100%;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s linear;
+}
+
+.nav__item:hover {
+   border-top-color: white; /* faqat rang o‘zgaradi */
+  background-color: rgba(255, 255, 255, 0.1);
+
+}
+
+.nav__item{
+  display: flex;
+  align-items:center;
+  gap: 5px;
+  justify-content: center;
+
+  border-top: 1px solid transparent; /* har doim joy bor */
+  transition: all 0.3s linear;
+}
+
+.nav__icon {
+  vertical-align: baseline;
+  align-self: center;
+
+}
+
+.nav__text {
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+}
+
+.nav__item::after {
+  content: '';
+  width: 10px;
+  height: 1px;
+  background-color: #fff;
+  transform: rotate(90deg) translateY(-12px);
+}
+
+.nav__item:last-child::after {
+  display: none;
+}
+
+.nav__second {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 282px; */
+  width: 23%;
+}
+
+.nav__second-footer {
+    display: none;
+}
+
+.nav__second i {
+  font-size: 18px;
+}
+
+.arrow-transform {
+  transform: rotate(90deg);
+}
+

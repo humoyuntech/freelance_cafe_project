@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --white: #fff;
+    --bg-color:#252525;
+    --logo-bg: #ff8c00;
+    --bg-body: #050505;
+    --btn-color: #0f0f0f;
+    --border-color: #252525;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.container {
+	width: 100%;
+	padding: 0 4rem;
+    height: 100%;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--white);
+    font-family: "Nunito", sans-serif;
+    /* overflow-x: scroll; */
+}
+
+.main__wrapper{
+    display: grid;
+    grid-template-columns: 214px 1fr;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.block {
+    display: none;
+}
+

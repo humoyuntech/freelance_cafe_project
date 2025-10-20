@@ -1,0 +1,163 @@
+.header {
+    background-color: var(--bg-body);
+    padding: 30px;
+    display: flex;
+}
+
+.left__block {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 60px;    
+}
+
+.logo {
+    width: 154px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: var(--white)
+}
+
+.logo_img-block {
+    background-color: var(--logo-bg);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}  
+
+.logo_img-block .logo__img{
+    width: 25px;
+    height: 25px;
+}
+
+.logo_img-block span{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.search__form {
+    width: 350px;
+    height: 40px;
+}
+
+.search__form label {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    border: 1px solid #252525;
+    border-radius: 40px;
+    height: 100%;
+    background: #151515;
+    background-color: var(--bg-color);
+    overflow: hidden;
+    padding: 5px;
+}
+
+.search__form-input{
+    border-radius: 40px;
+    width: 90%;
+    height: 100%;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    background-color: inherit;
+    padding-left: 20px;
+    color: var(--white);
+}
+
+.search__form-btn{
+    width: 16px;
+    height: 100%;
+    flex: 1;
+    color: #6E6E6E;
+    background-color: inherit;
+    outline: none;
+    border: none
+}
+
+.header__wrapper {
+    display: flex;
+}
+
+.right__block {
+    /* outline: 1px solid white; */
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.btn {
+    border: 1px solid #838383;
+    border-radius: 10px;
+    width: 179px;
+    height: 50px;
+    background-color: inherit;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.time {
+    width: 126px;
+    display: grid;
+    grid-template-columns: 126px, 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    "image week"
+    "image oclock"
+    ;
+    align-items: center;   /* vertikal markazlash */
+    justify-items: center; /* gorizontal markazlash */
+}
+
+.time__img{
+    grid-area: image;
+  justify-self: center; /* tasvirni markazga joylash */
+  align-self: center;
+    
+}
+
+.time__week{
+    grid-area: week;
+
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+
+.time__oclock{
+    grid-area: oclock;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+
+}
+
+.burger__menu {
+    display: none;
+    /* display: flex; */
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.burger__menu .menu__burger {
+    display: none;
+}
+
+.burger__menu .menu__close {
+    display: none;
+}
